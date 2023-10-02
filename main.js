@@ -27,7 +27,9 @@ function isValidPassword(password){
 }
 
 function isRegisteredUser(username){
-  return (username === user1 || username === user2 || username === user3);
+  return username === user1
+      || username === user2
+      || username === user3;
 }
 
 function passwordMatches(username, password){
