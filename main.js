@@ -14,10 +14,10 @@ const password3 = "supToThis"
 // **YOUR** code below. Pass those tests!
 
 function isValidEmail(email){
-  return (email.endsWith('.prsvr@gmail.com') === true
-       || email.endsWith('@perseverenow.org') === true)
-      && (email.startsWith('.prsvr@gmail.com') === false
-       && email.startsWith('@perseverenow.org') === false);
+  return (email.endsWith('.prsvr@gmail.com')
+       || email.endsWith('@perseverenow.org'))
+      && (!email.startsWith('.prsvr@gmail.com')
+       && !email.startsWith('@perseverenow.org'));
 }
 
 function isValidPassword(password){
